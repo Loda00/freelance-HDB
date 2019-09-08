@@ -5,31 +5,34 @@ import rootReducer from '../reducer'
 import { loadState, saveState } from './localStorage'
 
 const configureStore = () => {
-  const persistedState = loadState()
-  const middleware = [thunk]
-  const enhancers = [applyMiddleware(...middleware)]
-  const composeEnhacers = process.env.NODE_ENV !== 'production'
+  const persistedState = loadState();
+  const middlewares = [thunk];
+  const enhancers = [applyMiddleware(...middlewares)];
+  const composeEnhancers = process.env.NODE_ENV !== 'production'
     && typeof window === 'object'
     && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
       shouldHotReload: false,
     })
-    : compose
+    : compose;
 
   const store = createStore(
     rootReducer,
     persistedState,
-    composeEnhacers(...enhancers),
-  )
-  store.suscribe(
+    composeEnhancers(...enhancers),
+  );
+
+  store.subscribe(
     throttle(() => {
       saveState({
         auth: store.getState().auth,
-      })
+        userCompanies: store.getState().userCompanies,
+        userQuote: store.getState().userQuote,
+      });
     }),
-  )
+  );
 
-  return store
-}
+  return store;
+};
 
-export default configureStore
+export default configureStore;

@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 
+import user from './user/index'
+
 const reducers = combineReducers({
-  test: 1,
+  user,
 })
 
 export default reducers
