@@ -21,17 +21,19 @@ class Web extends Component {
                 src={Logo}
                 size="tiny"
                 style={{
-                  width: '50%',
-                  padding: '9px 10px',
+                  width: '350px',
+                  height: '80px',
+                  padding: '13px 10px',
+                  position: 'relative',
                 }}
               />
             </div>
             <div className="header-content-item-2">
-              <Icon name="home" />
-              <Icon name="facebook messenger" />
-              <Icon name="bell outline" />
-              <Icon name="setting" />
-              <Icon name="question" />
+              <Icon size="large" name="home" />
+              <Icon size="large" name="facebook messenger" />
+              <Icon size="large" name="bell outline" />
+              <Icon size="large" name="setting" />
+              <Icon size="large" name="question" />
             </div>
           </div>
           <div

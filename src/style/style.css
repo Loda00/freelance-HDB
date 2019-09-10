@@ -73,7 +73,7 @@
 .header-content {
     display: flex;
     justify-content: space-around;
-    width: 70%
+    width: 75%
 }
 
 .header-content-2 {
@@ -81,10 +81,11 @@
     justify-content: space-around;
     align-items: center;
     border-left: 1px solid white;
-    width: 30%
+    width: 25%
 }
 
 .header-content-item-1 {
+    position: relative;
     width: 70%;
     height: 80px;
 }
