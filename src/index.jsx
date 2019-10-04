@@ -8,8 +8,6 @@ import configureStore from './store/store'
 
 const store = configureStore()
 
-console.log('11111111', store)
-
 ReactDOM.render(
   React.createElement(App, {
     store,

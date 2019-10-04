@@ -49,7 +49,7 @@ class Web extends Component {
             <p>Usuario</p>
           </div>
         </div>
-        <div className="header-menu">Menu</div>
+        {/* <div className="header-menu">Menu</div> */}
       </div>
     )
   }
