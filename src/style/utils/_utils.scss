@@ -1,0 +1,26 @@
+.combo-options-user {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    transition: .5s;
+}
+
+.card-main-content {
+    width: 200px !important;
+    background: transparentize($color: rgba(253, 253, 253, 0.46), $amount: .4) !important;
+    box-shadow: 1px 1px 1px !important;
+}
+.card-content {
+    padding: 14px 0px !important;
+}
+
+.feed-content {
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding: 5px 40px 5px 0px;
+    cursor: pointer;
+}
+
+.feed-content:hover {
+    background-color: #355aae !important;
+}

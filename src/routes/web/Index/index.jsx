@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// import '../../../style/index.scss'
+
 
 class Lugar extends Component {
   componentDidMount() {
@@ -10,7 +12,7 @@ class Lugar extends Component {
     return (
       <div className="content-index">
         <pre>
-          <h1>BIENVENIDOS</h1>
+          <h1 className="test">BIENVENIDOS</h1>
           <div>SISTEMA DE REGISTRO</div>
           <div>DE DATOS BIOGRÁFICOS DE LIMA</div>
         </pre>
