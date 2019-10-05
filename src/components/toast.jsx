@@ -25,7 +25,6 @@ const Custom = ({ message, type }) => {
 };
 
 export function success(message) {
-  console.log('xxx', message)
   toast.success(
     <Custom
       asd

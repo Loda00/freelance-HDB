@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 
-// import '../../../style/index.scss'
-
-
 class Lugar extends Component {
   componentDidMount() {
     console.log('Webbb')
@@ -10,7 +7,13 @@ class Lugar extends Component {
 
   render() {
     return (
-      <div className="content-index">
+      <div
+        className="content-index"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
         <pre>
           <h1 className="test">BIENVENIDOS</h1>
           <div>SISTEMA DE REGISTRO</div>

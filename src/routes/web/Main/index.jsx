@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, Switch, Route, Redirect } from 'react-router-dom'
+import { NavLink, Switch, Route, Redirect, withRouter } from 'react-router-dom'
 
 import Home from './home'
 import NotFound from '../404'
@@ -18,11 +18,21 @@ class Main extends Component {
 
     return (
       <React.Fragment>
-        <div className="sidebar-menu">
+        <div
+          className="sidebar-menu"
+          // style={{
+          //   transform: 'translateX(-200px)',
+          //   transform: setTimeout(() => {
+          //     console.log('entreee 1seg')
+          //     return 'translateX(0px)'
+          //   }, 1000),
+          // }}
+        >
           { state1
           && (
-            <div className="sidebar-sub-menu">
-
+            <div
+              className="sidebar-sub-menu"
+            >
               <div className="sidebar-menu-item">
                 <NavLink
                   to="/HDB/products"
@@ -69,6 +79,7 @@ class Main extends Component {
           />
           <Route path="/HDB/services" component={Home} />
           <Route path="/HDB/ensembles" component={Home} />
+          <Route path="/HDB/personales" component={Home} />
           <Route path="/HDB/products" component={Home} />
           <Route component={NotFound} />
         </Switch>
@@ -77,4 +88,4 @@ class Main extends Component {
   }
 }
 
-export default Main
+export default withRouter(Main)

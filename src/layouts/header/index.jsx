@@ -53,6 +53,7 @@ class Web extends Component {
                     height: '80px',
                     padding: '13px 10px',
                     position: 'relative',
+                    cursor: 'pointer',
                   }}
                 />
               </div>
@@ -75,7 +76,7 @@ class Web extends Component {
                 }}
               />
               <p className="name-user">Jhon Alex Neira</p>
-              <div className="icon-option-user" onClick={e => this.handleOpenOptionsUser(e)}>
+              <div className="icon-option-user" onClick={this.handleOpenOptionsUser}>
                 <Icon name="caret down" />
               </div>
               {
@@ -107,7 +108,7 @@ class Web extends Component {
                           <Feed.Event>
                             <Feed.Content className="feed-content">
                               <Feed.Summary>
-                                You added
+                                Exit
                               </Feed.Summary>
                             </Feed.Content>
                           </Feed.Event>

@@ -24,3 +24,13 @@
 .feed-content:hover {
     background-color: #355aae !important;
 }
+
+.content-404 {
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+.view-index {
+    display: flex;
+    align-items: center;
+}

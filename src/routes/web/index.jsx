@@ -3,9 +3,8 @@ import { Switch, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { HeaderMain } from '../../layouts/index'
 import Main from './Main'
-// import Lugar from './Lugar'
-// import Tipo from './Tipo'
 import Index from './Index'
+import NotFound from './404'
 
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -21,8 +20,7 @@ class Web extends Component {
           <Switch>
             <Route path="/index" component={Index} />
             <Route path="/HDB" component={Main} />
-            {/* <Route path="/lugar" component={Lugar} />
-            <Route path="/tipo" component={Tipo} /> */}
+            <Route component={NotFound} />
           </Switch>
         </HeaderMain>
         <ToastContainer
