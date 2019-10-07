@@ -1,7 +1,9 @@
 .sidebar-menu {
     background-color: #ccc;
+    overflow: scroll;
+    overflow-x: hidden;
     transition: .8s;
-    width: 200px;
+    width: 240px;
 }
 
 .sidebar-menu-item {
