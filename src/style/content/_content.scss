@@ -1,22 +1,22 @@
 .sidebar-view {
-    width: 100%;
+  width: 100%;
 }
 
 .sidebar-view-content {
-    display: flex;
-    height: calc(100vh - 110px);
-    width: 100%x;
+  display: flex;
+  height: calc(100vh - 110px);
+  width: 100%x;
 }
 
 .content-index {
-    padding: 30px 50px;
-    width: 100%;
+  padding: 30px 50px;
+  width: 100%;
 }
 
 .main-content {
-    padding: 30px 50px;
-    width: 100%;
-    height: calc(100vh - 110px);
-    overflow: scroll;
-    overflow-x: hidden;
+  padding: 30px 50px;
+  width: 100%;
+  height: calc(100vh - 110px);
+  overflow: scroll;
+  overflow-x: hidden;
 }

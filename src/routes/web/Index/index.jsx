@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import { test1, test2 } from 'action/test/index'
 
 class Lugar extends Component {
   componentDidMount() {
-    test1()
-    test2()
     console.log('Webbb')
   }
 

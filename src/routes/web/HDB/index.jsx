@@ -3,7 +3,8 @@ import { NavLink, Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { Icon } from 'semantic-ui-react'
 
 import Home from './Home'
-import BuscarUsuario from './BuscarUsuario'
+import SearchUser from './SearchUser'
+import CreateUser from './CreateUser'
 import NotFound from '../404'
 
 class Main extends Component {
@@ -226,14 +227,14 @@ class Main extends Component {
             render={() => (
               <Redirect
                 to={{
-                  pathname: '/HDB/products',
+                  pathname: '/HDB/buscar-usuario',
                 }}
               />
             )}
           />
-          <Route path="/HDB/buscar-usuario" component={BuscarUsuario} />
+          <Route path="/HDB/buscar-usuario" component={SearchUser} />
           <Route path="/HDB/datos-personales" component={Home} />
-          <Route path="/HDB/nuevo-usuario" component={Home} />
+          <Route path="/HDB/nuevo-usuario" component={CreateUser} />
           <Route path="/HDB/nacimiento" component={Home} />
           <Route path="/HDB/caracteristicas-fisicas" component={Home} />
           <Route component={NotFound} />

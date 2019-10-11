@@ -9,8 +9,7 @@ class Main extends Component {
   render() {
     return (
       <div className="main-content">
-        <h1>Crear trabajador</h1>
-
+        <h1>Home</h1>
 
       </div>
     )

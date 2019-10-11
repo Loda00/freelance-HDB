@@ -1,6 +1,6 @@
 // import { toast } from 'components';
 // import i18n from 'i18n';
-import fetch from '../../utils/fetch';
+import httpRequest from '../../utils/index'
 
 export function error(error) {
   return {
@@ -20,16 +20,14 @@ export function success(data) {
   };
 }
 
-export function list(page = '/companies') {
+export function list(page = 'usuarios') {
   return (dispatch) => {
     dispatch(loading(true));
     dispatch(error(''));
-
-    fetch(page)
-      .then(response => response.json())
+    httpRequest(page)
       .then((data) => {
         dispatch(loading(false));
-        dispatch(success(data));
+        dispatch(success(data.res));
       })
       .catch((e) => {
         // toast.error(i18n.t('toastError'));
