@@ -185,6 +185,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({
   listDistrito: state.distrito.list.data,
+  loadingListDistrito: state.distrito.list.loading,
 })
 
 const Main = connect(mapStateToProps, mapDispatchToProps)(CreateUser)
