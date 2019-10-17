@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import { HeaderMain } from '../../layouts/index'
-import Main from './Main'
+import { HeaderMain } from 'layouts/index'
+import HDB from './HDB'
 import Index from './Index'
 import NotFound from './404'
 
@@ -18,8 +18,19 @@ class Web extends Component {
       <div>
         <HeaderMain>
           <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <Redirect
+                  to={{
+                    pathname: '/index',
+                  }}
+                />
+              )}
+            />
             <Route path="/index" component={Index} />
-            <Route path="/HDB" component={Main} />
+            <Route path="/HDB" component={HDB} />
             <Route component={NotFound} />
           </Switch>
         </HeaderMain>

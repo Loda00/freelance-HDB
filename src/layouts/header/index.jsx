@@ -12,6 +12,11 @@ class Web extends Component {
 
   componentDidMount() {
     console.log('Webbb')
+    document.addEventListener('click', this.handleClickOutOptionsUser)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('click', this.handleClickOutOptionsUser)
   }
 
   handleClickRedirectHome = () => {
@@ -33,9 +38,23 @@ class Web extends Component {
     })
   }
 
+  handleFocus = (e) => {
+    this.closeOptionsUser = e
+    this.count = 0
+  }
+
+  handleClickOutOptionsUser = (e) => {
+    if (this.closeOptionsUser !== e.target && this.count !== 0) {
+      this.setState({
+        showOptionsUser: false,
+      })
+    }
+    this.count = 1
+  }
+
   render() {
     const { showOptionsUser } = this.state
-
+    console.log('this.count', this.count)
     return (
       <Fragment>
         <div className="header-main">
@@ -81,7 +100,7 @@ class Web extends Component {
               </div>
               {
                 showOptionsUser && (
-                  <div className="combo-options-user">
+                  <div className="combo-options-user" ref={this.handleFocus}>
                     <Card className="card-main-content">
                       <Card.Content
                         className="card-content"
