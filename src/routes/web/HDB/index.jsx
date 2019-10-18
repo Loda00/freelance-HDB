@@ -135,15 +135,7 @@ class Main extends Component {
               </div>
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/posesiones"
-                >
-                  <Icon name="clipboard list" size="small" />
-                  Posesiones
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/posesiones-poseido"
+                  to="/HDB/armamento-poseido"
                 >
                   <Icon name="crosshairs" size="small" />
                   Armamento poseido
@@ -151,7 +143,7 @@ class Main extends Component {
               </div>
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/posesiones-conocido"
+                  to="/HDB/armamento-conocido"
                 >
                   <Icon name="crosshairs" size="small" />
                   Armamento conocido
@@ -159,62 +151,67 @@ class Main extends Component {
               </div>
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/posesiones-conocido"
+                  to="/HDB/conocidos-penales"
                 >
-                  <Icon name="crosshairs" size="small" />
-                  Armamento conocido
+                  <Icon name="qrcode" size="small" />
+                  Conocidos en penales
+                </NavLink>
+              </div>
+              <div className="sidebar-menu-item">
+                <NavLink
+                  to="/HDB/amistades-publicas"
+                >
+                  <Icon name="users" size="small" />
+                  Amistades públicas
+                </NavLink>
+              </div>
+              <div className="sidebar-menu-item">
+                <NavLink
+                  to="/HDB/antecedentes-policiales"
+                >
+                  <Icon name="folder outline" size="small" />
+                  Antecedentes policiales
                 </NavLink>
               </div>
 
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/ensembles"
+                  to="/HDB/antecedentes-militares"
                 >
-                  <Icon name="folder" size="small" />
+                  <Icon name="folder outline" size="small" />
                   Antecedentes militares
                 </NavLink>
               </div>
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/services"
+                  to="/HDB/antecedentes-políticos"
                 >
-                  <Icon name="users" size="small" />
+                  <Icon name="folder outline" size="small" />
+                  Antecedentes políticos
+                </NavLink>
+              </div>
+              <div className="sidebar-menu-item">
+                <NavLink
+                  to="/HDB/datos-familiares"
+                >
+                  <Icon name="address book" size="small" />
                   Datos familiares
                 </NavLink>
               </div>
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/services"
+                  to="/HDB/datos-laborales"
                 >
+                  <Icon name="window restore" size="small" />
                   Datos laborales
                 </NavLink>
               </div>
               <div className="sidebar-menu-item">
                 <NavLink
-                  to="/HDB/services"
+                  to="/HDB/referencias-generales"
                 >
-                  Datos familiares
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/services"
-                >
-                  Datos familiares
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/services"
-                >
-                  Datos familiares
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/services"
-                >
-                  Datos familiares
+                  <Icon name="info" size="small" />
+                  Referencias generales
                 </NavLink>
               </div>
             </div>
