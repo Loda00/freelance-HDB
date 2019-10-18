@@ -3,6 +3,7 @@ import { withRouter, NavLink } from 'react-router-dom'
 import { Icon, Image, Card, Feed } from 'semantic-ui-react'
 
 import Logo from '../../image/logo.png'
+import LogoIcon from '../../image/icon.png'
 import Perfil from '../../image/perfil.png'
 
 class Web extends Component {
@@ -64,17 +65,32 @@ class Web extends Component {
                 className="header-content-item-1"
                 onClick={this.handleClickRedirectHome}
               >
-                <Image
-                  src={Logo}
-                  size="tiny"
-                  style={{
-                    width: '350px',
-                    height: '80px',
-                    padding: '13px 10px',
-                    position: 'relative',
-                    cursor: 'pointer',
-                  }}
-                />
+                <span className="logo-complet">
+                  <Image
+                    src={Logo}
+                    size="tiny"
+                    style={{
+                      width: '350px',
+                      height: '80px',
+                      padding: '13px 10px',
+                      position: 'relative',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </span>
+                <span className="logo-icon">
+                  <Image
+                    src={LogoIcon}
+                    size="tiny"
+                    style={{
+                      width: '85px',
+                      height: '80px',
+                      padding: '13px 10px',
+                      position: 'relative',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </span>
               </div>
               <div className="header-content-item-2">
                 <Icon size="large" name="home" />
@@ -87,13 +103,15 @@ class Web extends Component {
             <div
               className="header-content-2"
             >
-              <Image
-                src={Perfil}
-                style={{
-                  width: '17%',
-                  borderRadius: '50%',
-                }}
-              />
+              <span className="photo-perfil">
+                <Image
+                  src={Perfil}
+                  style={{
+                    width: '100%',
+                    borderRadius: '50%',
+                  }}
+                />
+              </span>
               <p className="name-user">Jhon Alex Neira</p>
               <div className="icon-option-user" onClick={this.handleOpenOptionsUser}>
                 <Icon name="caret down" />

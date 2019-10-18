@@ -1,24 +1,35 @@
 .sidebar-menu {
-  background-color: #ccc;
+  background-color: #312F32;
   overflow: scroll;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.8s;
+  width: 300px;
+}
+
+.sidebar-menu:hover {
+  overflow-y: scroll;
+}
+
+.sub-menu-icon {
+  padding-left: 7px;
+  padding-right: 35px;
+}
+
+.sidebar-sub-menu-item {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid white;
   width: 240px;
 }
 
-.sidebar-menu-item {
-  padding: 10px 15px;
-  width: 200px;
-  height: 40px;
-  box-sizing: border-box;
+.sidebar-sub-menu-title {
+  color: white
 }
 
-.sidebar-menu-item:hover {
-  background-color: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  height: calc(40px - 2px);
-  width: 200px;
+.sidebar-sub-menu-item:hover {
+  background-color: #ff8800;
+  width: 240px;
   transition: ease 0.4s;
 }
 
@@ -29,5 +40,11 @@
 
 .sidebar-sub-menu {
   height: calc(100vh - 110px);
-  width: 200px;
+  width: 240px;
+}
+
+@media screen and (max-width : 700px){
+  .sidebar-menu{
+    width: 65px;
+  }
 }

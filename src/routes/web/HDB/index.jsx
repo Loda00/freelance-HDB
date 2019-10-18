@@ -37,183 +37,204 @@ class Main extends Component {
             <div
               className="sidebar-sub-menu"
             >
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/buscar-usuario"
-                >
-                  <Icon name="search" size="small" />
+              <NavLink
+                to="/HDB/buscar-usuario"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="search" size="small" />
                   Buscar usuario
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/nuevo-usuario"
-                >
-                  <Icon name="user plus" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/nuevo-usuario"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="user plus" size="small" />
                   Nuevo usuario
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/datos-personales"
-                >
-                  <Icon name="user" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/datos-personales"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="user" size="small" />
                   Datos personales
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/nacimiento"
-                >
-                  <Icon name="bell" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/nacimiento"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="bell" size="small" />
                   Fecha de nacimiento
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/caracteristicas-fisicas"
-                >
-                  <Icon name="child" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/caracteristicas-fisicas"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="child" size="small" />
                   Caracteristicas físicas
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/domicilio"
-                >
-                  <Icon name="home" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/domicilio"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="home" size="small" />
                   Domicilio
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/educacion"
-                >
-                  <Icon name="university" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/educacion"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="university" size="small" />
                   Educación
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/cursos"
-                >
-                  <Icon name="book" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/cursos"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="book" size="small" />
                   Otros cursos
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/viajes"
-                >
-                  <Icon name="plane" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/viajes"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="plane" size="small" />
                   Viajes
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/idiomas"
-                >
-                  <Icon name="language" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/idiomas"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="language" size="small" />
                   Idiomas
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/empleos-militares"
-                >
-                  <Icon name="briefcase" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/empleos-militares"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="briefcase" size="small" />
                   Empleos militares
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/empleos-civiles"
-                >
-                  <Icon name="briefcase" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/empleos-civiles"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="briefcase" size="small" />
                   Empleos civiles
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/armamento-poseido"
-                >
-                  <Icon name="crosshairs" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/armamento-poseido"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="crosshairs" size="small" />
                   Armamento poseido
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/armamento-conocido"
-                >
-                  <Icon name="crosshairs" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/armamento-conocido"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="crosshairs" size="small" />
                   Armamento conocido
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/conocidos-penales"
-                >
-                  <Icon name="qrcode" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/conocidos-penales"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="qrcode" size="small" />
                   Conocidos en penales
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/amistades-publicas"
-                >
-                  <Icon name="users" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/amistades-publicas"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="users" size="small" />
                   Amistades públicas
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/antecedentes-policiales"
-                >
-                  <Icon name="folder outline" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/antecedentes-policiales"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="folder outline" size="small" />
                   Antecedentes policiales
-                </NavLink>
-              </div>
-
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/antecedentes-militares"
-                >
-                  <Icon name="folder outline" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/antecedentes-militares"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="folder outline" size="small" />
                   Antecedentes militares
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/antecedentes-políticos"
-                >
-                  <Icon name="folder outline" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/antecedentes-políticos"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="folder outline" size="small" />
                   Antecedentes políticos
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/datos-familiares"
-                >
-                  <Icon name="address book" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/datos-familiares"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="address book" size="small" />
                   Datos familiares
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/datos-laborales"
-                >
-                  <Icon name="window restore" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/datos-laborales"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="window restore" size="small" />
                   Datos laborales
-                </NavLink>
-              </div>
-              <div className="sidebar-menu-item">
-                <NavLink
-                  to="/HDB/referencias-generales"
-                >
-                  <Icon name="info" size="small" />
+                </div>
+              </NavLink>
+              <NavLink
+                to="/HDB/referencias-generales"
+                className="sidebar-sub-menu-item"
+              >
+                <div className="sidebar-sub-menu-title">
+                  <Icon className="sub-menu-icon" name="info" size="small" />
                   Referencias generales
-                </NavLink>
-              </div>
+                </div>
+              </NavLink>
             </div>
           )}
         </div>
