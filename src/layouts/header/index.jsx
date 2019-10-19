@@ -12,7 +12,6 @@ class Web extends Component {
   }
 
   componentDidMount() {
-    console.log('Webbb')
     document.addEventListener('click', this.handleClickOutOptionsUser)
   }
 
@@ -55,7 +54,7 @@ class Web extends Component {
 
   render() {
     const { showOptionsUser } = this.state
-    console.log('this.count', this.count)
+
     return (
       <Fragment>
         <div className="header-main">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// eslint-disable-next-line no-unused-vars
 import { Header, Segment, Dimmer, Loader, Form } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 import { isEmpty } from 'lodash'
@@ -37,126 +38,172 @@ class CreateUser extends Component {
     console.log('listDistrito', listDistrito, this.props)
     return (
       <div className="main-content">
-        <Header as="h2">Nuevo trabajador</Header>
-        <Segment
+        {/* <Segment
           basic
-        >
-          <Dimmer active={false} inverted>
-            <Loader>Loading</Loader>
-          </Dimmer>
-          <Form.Group inline>
-            <Form.Input
-              label="Nombres :"
-              loading
-              placeholder="Nombres"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="Apellido paterno :"
-              loading
-              placeholder="Apellido paterno "
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="Apellido materno :"
-              loading
-              placeholder="Apellido materno"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="DNI :"
-              loading
-              placeholder="DNI"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="Nacimiento :"
-              loading
-              placeholder="Nacimiento"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="Cargo :"
-              loading
-              placeholder="Cargo"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="DNI :"
-              loading
-              placeholder="DNI"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="Fecha Nacimiento :"
-              loading
-              placeholder="Fecha Nacimiento"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Select
-              label="Estado Civil :"
-              loading
-              placeholder="Estado Civil"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Select
-              label="Género :"
-              loading
-              placeholder="Género"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Input
-              label="Apodo :"
-              loading
-              placeholder="Apodo"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Select
-              label="Distrito :"
-              loading
-              placeholder="Distrito"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Select
-              label="Distrito :"
-              loading
-              placeholder="Distrito"
-              size="mini"
-            />
-          </Form.Group>
-          <Form.Group inline>
-            <Form.Select
-              label="Académico :"
-              loading
-              placeholder="Académico"
-              size="mini"
-            />
-          </Form.Group>
-        </Segment>
+        > */}
+        {/* <Dimmer active={false} inverted>
+          <Loader>Loading</Loader>
+        </Dimmer> */}
+        <div className="grid-create-user">
+          <div>
+            <Header as="h2">Nuevo trabajador</Header>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Nombres :"
+                loading
+                placeholder="Nombres"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Apellido paterno :"
+                loading
+                placeholder="Apellido paterno"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Apellido materno :"
+                loading
+                placeholder="Apellido materno"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="DNI :"
+                loading
+                placeholder="DNI"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Nacimiento :"
+                loading
+                placeholder="Nacimiento"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Cargo :"
+                loading
+                placeholder="Cargo"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          {/* <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="DNI :"
+                loading
+                placeholder="DNI"
+                // size="mini"
+              />
+            </Form.Group>
+          </div> */}
+          {/* <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Nacimiento :"
+                loading
+                placeholder="Fecha Nacimiento"
+                // size="mini"
+              />
+            </Form.Group>
+          </div> */}
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Estado Civil :"
+                loading
+                placeholder="Estado Civil"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Género :"
+                loading
+                placeholder="Género"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Apodo :"
+                loading
+                placeholder="Apodo"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Distrito :"
+                loading
+                placeholder="Distrito"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+          {/* <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Distrito :"
+                loading
+                placeholder="Distrito"
+                // size="mini"
+              />
+            </Form.Group>
+          </div> */}
+          <div>
+            <Form.Group>
+              <Form.Input
+                fluid
+                label="Académico :"
+                loading
+                placeholder="Académico"
+                // size="mini"
+              />
+            </Form.Group>
+          </div>
+        </div>
+        {/* </Segment> */}
         <ZorroButton
           icon="plus"
         >
