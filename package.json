@@ -68,6 +68,7 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
+    "dev": "NODE_PATH=./src npm run start",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
