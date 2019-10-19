@@ -6,6 +6,7 @@
     "jest": true
   },
   "rules": {
+    "linebreak-style": 0,
     "no-shadow": 0,
     "semi": 0,
     "import/no-unresolved": 0,
