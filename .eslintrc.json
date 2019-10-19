@@ -9,6 +9,7 @@
     "linebreak-style": 0,
     "global-require": 0,
     "eslint linebreak-style": [0, "error", "windows"],
+    "react/jsx-one-expression-per-line": "off",
     "no-shadow": 0,
     "semi": 0,
     "import/no-unresolved": 0,

@@ -126,26 +126,20 @@ class Web extends Component {
                           <Feed.Event onClick={this.handleCloseOptionsUser}>
                             <Feed.Content className="feed-content">
                               <span onClick={this.handleCloseOptionsUser}>
-                                <Feed.Summary>
-                                  You added
-                                </Feed.Summary>
+                                <Feed.Summary>You added</Feed.Summary>
                               </span>
                             </Feed.Content>
                           </Feed.Event>
 
                           <Feed.Event>
                             <Feed.Content className="feed-content">
-                              <Feed.Summary>
-                                You added
-                              </Feed.Summary>
+                              <Feed.Summary>You added</Feed.Summary>
                             </Feed.Content>
                           </Feed.Event>
 
                           <Feed.Event>
                             <Feed.Content className="feed-content">
-                              <Feed.Summary>
-                                Exit
-                              </Feed.Summary>
+                              <Feed.Summary>Exit</Feed.Summary>
                             </Feed.Content>
                           </Feed.Event>
                         </Feed>
